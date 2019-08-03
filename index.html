@@ -99,66 +99,69 @@
         </div>
         <div id="seccion1">
           <ol>
-            <img class="perfil" src="IMG_PERSONAL.jpg" align="center" width="250">
-            <h2>Irene Rodríguez López</h2><p>Ingeniera de telecomunicaciones</p>
-            <hr><br><br>
-            <img src="dir.png" align="left" width="26" height="28" id="foto_dir">
-            <h4>Rivas Vaciamadrid, 28522 Madrid</h4>
-            <img src="cump.svg" align="left" width="32" height="20" id="foto_cumple">
-            <h4>26/07/1996</h4>
-            <img src="gmail.png" align="left" width="30" height="20"id="foto_gmail">
-            <h4>irene17a@gmail.com</h4>
-            <img src="movil.png" align="left" width="26" height="22" id="foto_movil">
-            <h4>+34 607821962</h4>
-            <hr><br><br>
-            <a href="https://api.whatsapp.com/send?phone=34607821962">
-              <button type="button" name="linkedin">
-              <img src="whassapp.png" align="left" width="30">
-            </button></a>
-            <a href="https://www.linkedin.com/in/irene-rodriguez-20572415a/">
-              <button type="button" name="linkedin">
-              <img src="link.png" align="left" width="30">
-            </button></a>
-            <a href="https://github.com/irenerl10">
-              <button type="button" name="github">
-              <img src="github.png" align="left" width="30">
-            </button>
-            </a>
-            <br><br>
-            <hr>
-            <h3>Idiomas: español(nativo), inglés(B1), francés(A2)</h3>
-            <h3>Carnet de conducir B1</h3>
-            <h3>Vehículo Propio</h3>
-            <h3>Disponibilidad inmediata</h3>
-            <hr><br><br>
-            <form name="eMailer"><b>ENVIAR ESTE CURRICULUM</b><br>Indica su e-mail:<br>
-              <input type="text" name="address" size="25"><br>
-              <input type="button" value="Recomendar!" onClick="mailThisUrl();">
-              </form>
-              <script language="JavaScript1.2">
-                var good;
-                function checkEmailAddress(field) {
-                  var goodEmail = field.value.match(/\b(^(\S+@).+((\.com)|(\.net)|
-                  (\.edu)|(\.mil)|(\.gov)|(\.org)|(\..{2,2}))$)\b/gi);
-                  if (goodEmail){
-                    good = true
-                  } else {
-                    alert('Por favor introduce un e-mail valido')
-                    field.focus()
-                    field.select()
+            <img class="perfil" src="IMG_PERSONAL.jpg" align="center" width="350">
+            <div id="seccion3">
+            <fieldset>
+              <legend><h2>Irene Rodríguez López</h2></legend>
+                <h2></h2><p>Ingeniera de telecomunicaciones</p>
+                <hr><br><br>
+                <img src="dir.png" align="left" width="26" height="28" id="foto_dir">
+                <h4>Rivas Vaciamadrid, 28522 Madrid</h4>
+                <img src="cump.svg" align="left" width="32" height="20" id="foto_cumple">
+                <h4>26/07/1996</h4>
+                <img src="gmail.png" align="left" width="30" height="20"id="foto_gmail">
+                <h4>irene17a@gmail.com</h4>
+                <img src="movil.png" align="left" width="26" height="22" id="foto_movil">
+                <h4>+34 607821962</h4>
+                <hr><br><br>
+                <a href="https://api.whatsapp.com/send?phone=34607821962">
+                  <button type="button" name="linkedin">
+                    <img src="whassapp.png" align="left" width="30">
+                  </button></a>
+                  <a href="https://www.linkedin.com/in/irene-rodriguez-20572415a/">
+                <button type="button" name="linkedin">
+                <img src="link.png" align="left" width="30">
+              </button></a>
+              <a href="https://github.com/irenerl10">
+                <button type="button" name="github">
+                <img src="github.png" align="left" width="30">
+              </button>
+              </a>
+              <br><br>
+              <hr>
+              <h3>Idiomas: español(nativo), inglés(B1), francés(A2)</h3>
+              <h3>Carnet de conducir B1</h3>
+              <h3>Vehículo Propio</h3>
+              <h3>Disponibilidad inmediata</h3>
+              <hr><br><br>
+              <form name="eMailer"><b>ENVIAR ESTE CURRICULUM</b><br>Indica su e-mail:<br>
+                <input type="text" name="address" size="25"><br>
+                <input type="button" value="Recomendar!" onClick="mailThisUrl();">
+                </form>
+                <script language="JavaScript1.2">
+                  var good;
+                  function checkEmailAddress(field) {
+                    var goodEmail = field.value.match(/\b(^(\S+@).+((\.com)|(\.net)|
+                    (\.edu)|(\.mil)|(\.gov)|(\.org)|(\..{2,2}))$)\b/gi);
+                    if (goodEmail){
+                      good = true
+                    } else {
+                      alert('Por favor introduce un e-mail valido')
+                      field.focus()
+                      field.select()
+                      good = false
+                    }
+                  }
+                  u = "https://irenerl10.github.io/2018-19-CSAAI-mi-CV/";
+                  m = "Pienso que te puede interesar esta página: ";
+                  function mailThisUrl(){
                     good = false
+                    checkEmailAddress(document.eMailer.address)
+                    if (good){
+                      window.location = "mailto:"+document.eMailer.address.value+"?subject="+m+"&body="+document.title+" "+u;
+                    }
                   }
-                }
-                u = "https://irenerl10.github.io/2018-19-CSAAI-mi-CV/";
-                m = "Pienso que te puede interesar esta página: ";
-                function mailThisUrl(){
-                  good = false
-                  checkEmailAddress(document.eMailer.address)
-                  if (good){
-                    window.location = "mailto:"+document.eMailer.address.value+"?subject="+m+"&body="+document.title+" "+u;
-                  }
-                }
-              </script>
+                </script>
             </ol>
         </div>
       </div>
