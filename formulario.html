@@ -1,0 +1,44 @@
+<!-- Definimos estilos del formulario -->
+<style type="text/css">
+.codb {
+background: #cd9864;
+color: #fff;
+text-align: center;
+}
+.inkuts {
+font-weight:bold;
+}
+#gtab {
+background:#fbda95;
+}
+</style>
+<form action="recomendar.php" method="post">
+<!-- recomendar.php es el fichero que procesa este formulario
+Procesamos el formulario con post, esto es debido a que existe una mayor seguridad, al enviar los datos de un formulario mediante post. -->
+<table id="gtab">
+<tr>
+<td class="codb" colspan="2"><div>Recomienda esta página a tu amigo </div></td>
+</tr>
+<tr>
+<td class="inkuts"><span>Tu Nombre:</span></td>
+<td><input name="nombre"></td>
+</tr>
+<tr>
+<td class="inkuts"><span>Tu E-mail</span></td>
+<td><input name="email"></td>
+</tr>
+<tr >
+<td class="inkuts"><span>Tu Amigo:</span></td>
+<td><input name="amigo"></td>
+</tr>
+<tr>
+<td class="inkuts"><span>E-mail del Amigo:</span></td>
+<td><input name="emailamigo"></td>
+</tr>
+<tr class="codb">
+<td colspan="2">
+<div>
+<input type="submit" value="Enviar">
+</div>
+</table>
+</form>
