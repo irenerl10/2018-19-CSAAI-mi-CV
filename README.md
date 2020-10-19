@@ -1,2 +1,2 @@
 # CV_VITAE
-Plantilla para colocar tu currículum. Práctica 1 de la asignatura CSAAI. Curso 2018-19
+Pincha aquí para ver curriculum: https://irenerl10.github.io/CV_VITAE/
